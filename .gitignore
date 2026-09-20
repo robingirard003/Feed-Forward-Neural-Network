@@ -1,0 +1,63 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# --- Virtual environments ---
+venv/
+.env/
+.env.bak/
+.venv/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Logs ---
+*.log
+
+# --- ML / Data ---
+data/
+datasets/
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+*.joblib
+
+# --- Models ---
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# --- Outputs ---
+outputs/
+results/
+
+# --- Latex ---
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.tex
+
+# --- VS Code ---
+.vscode/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- PDF ---
+*.pdf
