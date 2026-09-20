@@ -1,0 +1,60 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+% Feel free to add packages!
+
+% First page setup (do not edit)
+\fancypagestyle{firstpagestyle}
+{
+\headheight 35pt
+\lhead{\nameA}
+\lhead{\nameA\\\nameB}                 
+\chead{\textbf{\large Report Group \groupnumber}}
+\rhead{\nameC \\\nameD }
+\headsep 1.5em
+\topmargin = -54pt
+}
+
+% Please fill in all unknows here
+\newcommand\groupnumber{GRPNR}          % <-- group number #HERE
+\newcommand\nameA{name A}               % <-- Names #HERE
+\newcommand\nameB{name B}               % <-- Names #HERE
+\newcommand\nameC{name C}               % <-- Names #HERE
+\newcommand\nameD{name D}               % <-- Names #HERE
+
+
+\begin{document}
+\thispagestyle{firstpagestyle}\noindent
+Your report must be written here. Please adhere to the instructions in \texttt{instructions\_assignment.pdf}. Keep in mind the one-page limit (excluding potential references and appendix) and do not forget to fill in your names.
+
+\newpage 
+
+\section*{Appendix}
+In this appendix, you are allowed to use for the requested figures and to write down the parameters you optimized and specify what grid you used to search the space of hyperparameter values. You are free to be a little creative with how you do this. For example, if you deepened your grid search along the way, then you may want to specify several grids in different columns. You may also have used a hyperparameter tuning method that does not require a typical grid at all but instead requires some additional parameters to set up the hyperparameter tuning. You could also put that in the appendix. In any case: please do not use the appendix to enter more descriptions or explanations of the method. Your methods should be a part of the Report section.
+
+\begin{table}[h!]
+ \centering
+ \caption{This is an example appendix: Below are our selected hyperparameters with ranges applied for the grid search of our regression model. (Only include information here that helps the reader to understand the data. Your methodology should be provided in the report only.)}
+ \begin{tabular}{||c c||} 
+ \hline
+ parameter & grid \\ [0.5ex] 
+ \hline\hline
+ $\alpha$ & \{1,2,3,4,5\} \\ 
+ $\beta$  & \{6,7,8,9,10\} \\
+ $\gamma$ & \{2,4,6,8,10\} \\
+ $\delta$ & \{1,3,5,7,9\} \\
+ \hline
+ \end{tabular}
+\end{table}
+
+\newpage
+
+\section*{References}
+Your references go here. Feel free to use any packages you need to streamline your referencing. 
+
+\end{document}
+
+
+
